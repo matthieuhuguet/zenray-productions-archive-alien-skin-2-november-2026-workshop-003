@@ -1,0 +1,16 @@
+{
+ "height": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/T_AlienSkin_MeshHeight.png",
+ "out": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal",
+ "plane_name": "SM_AlienSkin_Plane",
+ "sphere_name": "SM_AlienSkin_Sphere",
+ "plane_size_m": 4.0,
+ "plane_tiles": 2.0,
+ "plane_cells": 1024,
+ "plane_depth_m": 0.1,
+ "sphere_tiles_u": 2.0,
+ "sphere_tiles_v": 1.0,
+ "sphere_rows": 769,
+ "sphere_cols": 1536,
+ "sphere_depth_m": 0.155,
+ "mean_height": 0.3615
+}

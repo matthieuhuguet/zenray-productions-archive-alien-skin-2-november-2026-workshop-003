@@ -1,0 +1,165 @@
+{
+ "stem": "AlienSkin",
+ "level": "/Game/ZenRayShards/Levels/L_AlienSkinAd",
+ "sequence": "/Game/ZenRayShards/Cinematics/LS_AlienSkinAd",
+ "tex_dir": "/Game/ZenRayShards/Materials/AlienSkin",
+ "mesh_dir": "/Game/ZenRayShards/Meshes/AlienSkin",
+ "rig": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/rig.json",
+ "anim": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/anim.json",
+ "render_job": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/render_job.json",
+ "params": {
+  "note": "2 November 2026 : the Ceramic Tiles rig, with what changes for a bright, glossy, relieved material. Lengths in centimetres, angles in degrees.",
+  "exposure_ev": -6.9,
+  "cd_per_unit": 4.0,
+  "lights": {
+   "softness": 0.8,
+   "azimuth": 0.0,
+   "stops": {
+    "key": 10.5,
+    "fill": 8.0,
+    "rim": 10.5
+   },
+   "key": {
+    "az": -40.0,
+    "el": 50.0,
+    "dist_cm": 600.0,
+    "w_cm": 260.0,
+    "h_cm": 260.0
+   },
+   "fill": {
+    "az": 62.0,
+    "el": 36.0,
+    "dist_cm": 650.0,
+    "w_cm": 340.0,
+    "h_cm": 340.0
+   },
+   "rimA": {
+    "az": 148.0,
+    "el": 24.0,
+    "dist_cm": 650.0,
+    "w_cm": 70.0,
+    "h_cm": 450.0
+   },
+   "rimB": {
+    "az": -148.0,
+    "el": 24.0,
+    "dist_cm": 650.0,
+    "w_cm": 70.0,
+    "h_cm": 450.0
+   },
+   "attenuation_cm": 4000.0,
+   "tint": [
+    0.82,
+    1.0,
+    0.88
+   ],
+   "aim_height_cm": 30.0,
+   "gloss_specular_scale": 1.0,
+   "rim_specular_scale": 0.5
+  },
+  "cyclorama": {
+   "colour": [
+    0.16,
+    0.16,
+    0.16
+   ],
+   "roughness": 0.6,
+   "floor_offset_cm": -20.0
+  },
+  "ambient_sky": {
+   "intensity": 0.02
+  },
+  "post": {
+   "tone_curve_amount": 0.0,
+   "bloom_intensity": 0.0,
+   "lens_flare_intensity": 0.0,
+   "film_grain_intensity": 0.0,
+   "motion_blur_amount": 0.0,
+   "local_exposure_highlight_contrast_scale": 1.0,
+   "local_exposure_shadow_contrast_scale": 1.0,
+   "ambient_occlusion_intensity": 0.0
+  },
+  "lumen": {
+   "scene_lighting_quality": 4.0,
+   "scene_detail": 4.0,
+   "final_gather_quality": 4.0,
+   "reflection_quality": 4.0,
+   "max_trace_distance": 20000.0,
+   "max_reflection_bounces": 3,
+   "max_roughness_to_trace_reflections": 0.6,
+   "scene_lighting_update_speed": 4.0,
+   "final_gather_lighting_update_speed": 4.0
+  }
+ },
+ "maps": {
+  "snake": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/maps_snake",
+  "red": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/maps_red",
+  "grey": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/maps_grey"
+ },
+ "meshes": {
+  "SM_AlienSkinPlane": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/SM_AlienSkin_Plane.fbx",
+  "SM_AlienSkinSphere": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/SM_AlienSkin_Sphere.fbx"
+ },
+ "plane_asset": "SM_AlienSkinPlane",
+ "sphere_asset": "SM_AlienSkinSphere",
+ "cyclorama_asset": "/Game/ZenRayShards/Meshes/CeramicAd/SM_CeramicAdCyclorama",
+ "material": {
+  "base_gain": 1.0,
+  "roughness_scale": 0.75,
+  "normal_strength": 1.0,
+  "normal_y_sign": -1.0,
+  "specular": 0.8
+ },
+ "film_file": "/Users/zenray/.claude/tmp/tmp-alien-skin-2-november-2026/unreal/film.json",
+ "film": {
+  "fps": 24,
+  "order": [
+   "snake",
+   "red",
+   "grey"
+  ],
+  "trio": [
+   "red",
+   "snake",
+   "grey"
+  ],
+  "orbit_frames": 144,
+  "final": {
+   "focal": 35.0,
+   "start_width_m": 2.0,
+   "grid_width_m": 3.96,
+   "beat_frames": 48,
+   "x_m": 1.0,
+   "y_m": 1.0
+  },
+  "shots": [
+   "sphere cuts 5 s",
+   "rise 5 s",
+   "orbit 6 s",
+   "zoom from above 6 s",
+   "trio 5 s"
+  ]
+ },
+ "final_split": {
+  "hi_res": 4096,
+  "lo_res": 2048,
+  "target_fraction": 0.5,
+  "spatial": 2,
+  "temporal": 4,
+  "warmup": 16,
+  "stall_s": 360,
+  "tries": 12,
+  "raccord_max_diff": 0.01,
+  "hi_dir": "render/final_4096",
+  "lo_dir": "render/final_2048",
+  "raccord_dir": "render/raccord",
+  "film": "render/alien_skin_film_4096_24fps.mp4",
+  "soundtrack": "render/soundtrack/alien_skin_score.wav",
+  "video_bitrate": "80M",
+  "audio_bitrate": "320k",
+  "uproject": "/Users/zenray/Create/Build/Productions/ZenRayShards/ZenRayShards/ZenRayShards.uproject",
+  "editor_app": "/Users/zenray/Create/Build/UE_5.8/Engine/Binaries/Mac/UnrealEditor.app",
+  "hi_render": false,
+  "switch_frame": null
+ }
+}
